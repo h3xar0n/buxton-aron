@@ -6,6 +6,8 @@
     <title>Buxton Screening Exercise</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -22,15 +24,18 @@
     </nav>
 
     <div id="app">
-        <div class="post">
-            <img src="resources/no_avatar.gif">
+        <div v-for="activity in activity.data.recentActivities" class="post">
+            <img v-bind:src="'.' + activity.authorAvatar">
             <div class="description">
-                <p><strong>Name</strong> commented on the idea</p>
-                <p class="status">RE: What is for dinner?</p>
-                <p class="time-ago"><em>a few minutes ago</em></p>
+                <p><strong>{{ activity.author }}</strong> commented on the idea</p>
+                <p class="status">{{ activity.title }}</p>
+                <p class="time-ago"><em>{{ activity.postDate | formatDate}}</em></p>
             </div>
         </div>
     </div>
+
+    <script src="scripts/data.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

@@ -47,19 +47,22 @@ nav {
 
 .description {
     margin: 10px;
+    margin-left: 60px;
     font-family: Arial, Helvetica, sans-serif;   
 }
 
 .description p {
+    font-size: 12px;
     margin: 5px 0;
     padding: 0;
 }
 
-.status {
-    font-size: 20px;
+.description p.status {
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .time-ago {
     color: gray;
-    font-size: 12px;
+    font-size: 10px;
 }
