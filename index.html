@@ -4,23 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Buxton Screening Exercise</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 
 <body>
-    <h1>Instructions</h1>
-    <p>Please use attached materials to generate activity stream as design mock below. Feel free to select any css and/or javascript
-        framework that you are most comfortable with.</p>
-    <strong>Materials include:</strong>
-    <ul>
-        <li>Design mock (mock.jpg)</li>
-        <li>Sample data (data.json)</li>
-        <li>Sample assets (avatar image)</li>
-    </ul>
-    <h2>Mock/Expected Result</h2>
+    <nav>
+        <div class="inner-nav">
+            <span id="back" class="nav-button">
+                <i class="fas fa-angle-left"></i>
+            </span>
+            <span>Activity</span>
+            <span class="nav-button">
+                <i class="fas fa-bars"></i>
+            </span>
+        </div>
+    </nav>
 
-    <p>
-        <img style="border: 1px solid #ddd;" src="mock.jpg" />
-    </p>
+    <div id="app">
+        <div class="post">
+            <img src="resources/no_avatar.gif">
+        </div>
+    </div>
 </body>
 
 </html>
