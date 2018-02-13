@@ -39,7 +39,27 @@ nav {
 }
 
 .post img {
+    float: left;
     border-radius: 100%;
     border: 1px solid rgb(226, 225, 225);
     margin: 10px;
+}
+
+.description {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+
+.description p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+.status {
+    font-size: 20px;
+}
+
+.time-ago {
+    color: gray;
+    font-size: 12px;
 }
